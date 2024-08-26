@@ -1,0 +1,186 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.money {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.h1-font {
+  font-family: "Merriweather", serif;
+}
+
+.pop:hover {
+  background-color: green;
+  transform: scale(1.03);
+  transition: all 0.3s;
+}
+
+.pop1:hover {
+  transform: scale(1.03);
+  transition: all 0.3s;
+}
+
+.fundcard {
+  width: 19rem; 
+  height: 22rem;
+  border: none;
+  border-radius: 15px;
+}
+
+.fundcard:hover {
+  transform: scale(1.03);
+  transition: all 0.3s;
+}
+
+.heading {
+  background-color: #0cac9c; 
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: #0cac9c;
+  color: white;
+  overflow: hidden;
+  height: 350px;
+}
+
+.contact:hover {
+  transform: scale(1.03);
+  transition: all 0.3s;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: auto;
+  height: 60px;
+  background-color: #32a89e;
+  border-radius: 30px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+  white-space: nowrap;
+}
+
+.popup-menu {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+}
+
+.menu-item {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+.floating-button:hover .popup-menu {
+  display: flex;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+  h1, h2, h3 {
+      font-size: 1.2rem; /* Adjust as needed */
+  }
+
+  p {
+      font-size: 0.9rem;
+  }
+
+  .btn {
+      font-size: 0.85rem;
+      padding: 0.6rem 1rem;
+  }
+
+  .get-in-touch-btn {
+      position: relative; /* Or any positioning that suits your design */
+      margin-top: 1rem;
+      width: 100%; /* Full width on mobile for better visibility */
+  }
+
+  .section {
+      padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .text-center {
+      text-align: center;
+  }
+
+  .container img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  /* Adjust the font size for the heading on smaller screens */
+  .navbar-brand {
+      font-size: 20px; /* Decrease the font size */
+      white-space: normal; /* Allow text to wrap to the next line */
+      line-height: 1.2; /* Adjust line height */
+      text-align: center; /* Center align text */
+  }
+
+  /* Adjust the button style on smaller screens */
+  .get-in-touch-button {
+      padding: 8px 16px; /* Adjust the padding */
+      font-size: 12px; /* Decrease the font size */
+      display: block; /* Ensure the button takes full width */
+      width: 100%; /* Full width on mobile */
+      text-align: center; /* Center the text inside the button */
+      margin: 10px 0; /* Add some margin */
+  }
+
+  /* Ensure the main heading fits within the screen */
+  .heading {
+      font-size: 1.5rem; /* Adjust the font size */
+      padding: 10px; /* Adjust padding */
+      margin: 10px 0; /* Adjust margin */
+  }
+
+  /* Adjust sections to ensure content fits within the screen */
+  .about-us-section {
+      padding: 15px;
+  }
+
+  /* Ensure no horizontal scrolling */
+  body, html {
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+}
